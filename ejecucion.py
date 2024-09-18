@@ -8,7 +8,7 @@ def busqueda_lineal (data, a_buscar):
     return -1
 
 def busqueda_lineal_centinela (data, a_buscar):
-    data.append(numero)
+    data.append(a_buscar)
 
     i = 0
     while data[i] != numero:
@@ -43,9 +43,9 @@ def busqueda_binaria(data, numero):
 
 lista = [7,4,37,55,77,104,256,512]
 numero = 104
-resultado = busqueda_binaria(lista, numero)
+resultado = busqueda_lineal_centinela(lista, numero)
 
-busqueda_binaria(lista, numero)
+busqueda_lineal_centinela(lista, numero)
 
 
 if resultado != -1:
